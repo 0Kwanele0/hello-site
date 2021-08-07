@@ -1,0 +1,50 @@
+.services{
+    padding: 80px 20px;
+    overflow-x: hidden;
+    & h2{
+        text-align: center;
+        font-size: 48px;
+        font-weight:800;
+        margin: 0;
+        @media screen and (min-width:990px) {
+            font-size: 58px;
+            font-weight: 700;
+            
+        }
+    }
+    & p{
+        margin: 5px;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    &__box{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    &__each{
+        padding: 20px;
+        margin: 25px;
+        border: 2px solid blue;
+        border-radius: 20px;
+        text-align: center;
+        max-width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & img{
+            width: 200px;
+        }
+        & h3{
+            font-size: 22px;
+            margin: 0;
+        }
+        & p{
+            font-size: 15px;
+        }
+    }
+
+}
