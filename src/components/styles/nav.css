@@ -21,7 +21,13 @@
 .stable .logo {
   font-weight: 900;
   margin: 0;
-  padding: 5px;
+  padding: 5px 0 5px 5px;
+}
+
+@media screen and (max-width: 229px) {
+  .stable .logo {
+    font-size: 26px;
+  }
 }
 
 .stable .btn {
@@ -83,8 +89,14 @@
 
 .mob-nav ul li {
   padding: 30px 0;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 30px;
+}
+
+@media screen and (max-width: 229px) {
+  .mob-nav ul li {
+    font-size: 22px;
+  }
 }
 
 .mob-nav button {
@@ -96,11 +108,32 @@
   border: none;
   border-radius: 10px;
   margin-bottom: 20px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.mob-nav button:hover {
+  background-color: #dcd9d9;
+  color: #373737;
+}
+
+@media screen and (max-width: 229px) {
+  .mob-nav button {
+    font-size: 12px;
+    color: #181818;
+  }
+}
+
+@media screen and (max-width: 229px) {
+  .mob-nav img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media screen and (min-width: 766px) {
   .stable .logo {
-    margin: 20px 10px;
+    margin: 20px 0 20px 10px;
     cursor: pointer;
   }
   .stable img {
@@ -118,12 +151,12 @@
     border: none;
     border-radius: 10px;
     margin: 20px 10px;
+    text-transform: capitalize;
     cursor: pointer;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
   }
   .stable .btn:hover {
-    background-color: #5c30b3;
     -webkit-transform: scale(110%);
             transform: scale(110%);
   }
@@ -136,12 +169,14 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0;
   }
   .stable .list li {
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 400;
+    text-transform: uppercase;
     padding: 0 30px;
-    font-size: 15px;
+    font-size: 13px;
     white-space: nowrap;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -155,23 +190,38 @@
 
 @media screen and (min-width: 772px) {
   .stable .logo {
-    margin: 20px 20px;
+    margin: 20px 0;
   }
   .stable .btn {
-    margin: 20px 20px;
+    margin: 20px 0px;
   }
 }
 
 @media screen and (min-width: 870px) {
   .stable .logo {
-    margin: 20px 20px;
+    margin: 20px 0 20px 20px;
   }
   .stable .btn {
     margin: 20px 20px;
   }
   .stable .list li {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 1125px) {
+  .stable .logo {
+    margin: 20px 0 20px 50px;
+  }
+  .stable .btn {
+    margin: 20px 50px 20px 0;
+  }
+  .stable .list li {
+    font-weight: 400;
+    text-transform: uppercase;
     white-space: nowrap;
   }
 }

@@ -3,14 +3,24 @@
   color: white;
   font-size: 22px;
   border: none;
+  margin: 10px;
   padding: 15px 40px;
   border-radius: 9px;
   font-weight: 600;
+  white-space: nowrap;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
 .button-main:hover {
-  background-color: #9457d1;
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+@media screen and (min-width: 100px) {
+  .button-main {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 /*# sourceMappingURL=button-main.css.map */

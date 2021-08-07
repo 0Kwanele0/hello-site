@@ -3,9 +3,7 @@ import './styles/button-sec.css'
 
 function ButtonSec() {
     return (
-        <div>
-           <button className="button-sec">Contact us</button> 
-        </div>
+        <button className="button-sec">Contact us</button> 
     )
 }
 

@@ -12,11 +12,23 @@
   right: 40px;
 }
 
+@media screen and (min-width: 370px) {
+  .showcase__image {
+    right: 0px;
+  }
+}
+
 .showcase__title {
   font-weight: 900;
-  font-size: 38px;
+  font-size: 60px;
   margin: 0;
   padding: 10px;
+}
+
+@media screen and (max-width: 540px) {
+  .showcase__title {
+    font-size: 44px;
+  }
 }
 
 .showcase__description {
@@ -26,30 +38,52 @@
   font-weight: 300;
 }
 
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 1044px) {
   .showcase {
-    min-height: 90vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: left;
+    min-height: 550px;
+    overflow-x: hidden;
   }
   .showcase__image {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    overflow-x: hidden;
+    width: 750px;
+    max-width: 800px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  .showcase__title {
-    font-size: 50px;
-    font-weight: 900;
-  }
-  .right {
+  .showcase .right {
+    padding-left: 70px;
+    width: 45%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    text-align: left;
+  }
+  .showcase .right h1 {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .btns__sec {
+    display: none;
   }
 }
 /*# sourceMappingURL=showcase.css.map */

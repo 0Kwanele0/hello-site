@@ -8,11 +8,15 @@
         height: 40px;
         cursor: pointer;
         padding: 5px;
+        
     }
     & .logo{
         font-weight: 900;
         margin: 0;
-        padding: 5px;
+        padding: 5px 0 5px 5px;
+        @media screen and (max-width:229px) {
+            font-size: 26px;  
+        }
     }
     & .btn{
         display: none;
@@ -51,8 +55,12 @@
         justify-content: space-evenly;
         & li{
             padding: 30px 0;
-            font-weight: 700;
+            font-weight: 500;
             font-size: 30px;
+            @media screen and (max-width:229px) {
+            font-size: 22px;  
+            }
+
         }
     }
     & button{
@@ -64,13 +72,29 @@
         border: none;
         border-radius: 10px;
         margin-bottom: 20px;
+        transition: all .2s ease-in-out;
+        &:hover{
+            background-color: rgb(220, 217, 217);
+            color: rgb(55, 55, 55);
+        }
+        @media screen and (max-width:229px) {
+            font-size: 12px;  
+            color: rgb(24, 24, 24);
+
+        }
+    }
+    & img{
+        @media screen and (max-width:229px) {
+            width: 30px; 
+            height: 30px; 
+        }
     }
 }
 
 @media screen and (min-width:766px) {
     .stable{
         & .logo{
-             margin: 20px 10px;
+             margin: 20px 0 20px 10px;
              cursor: pointer;
         }
         & img{
@@ -86,10 +110,10 @@
             border: none;
             border-radius: 10px;
             margin: 20px 10px;
+            text-transform: capitalize;
             cursor: pointer;
             transition: all .2s ease-in-out;
             &:hover{
-                background-color: rgb(92, 48, 179);
                 transform: scale(110%);
             }
         }
@@ -98,11 +122,13 @@
             list-style: none;
             text-align: center;
             align-items: center;
+            padding: 0;
             & li{
                 cursor: pointer;
-                font-weight: 500;
+                font-weight: 400;
+                text-transform: uppercase;
                 padding: 0 30px;
-                font-size: 15px;
+                font-size: 13px;
                 white-space: nowrap;
                 transition: all .2s ease-in-out;
                 &:hover{
@@ -117,10 +143,10 @@
 @media screen and (min-width:772px){
     .stable{
         & .logo{
-             margin: 20px 20px;
+             margin: 20px 0 ;
         }
         & .btn{
-            margin: 20px 20px;
+            margin: 20px 0px;
         }
     }
 } 
@@ -128,17 +154,36 @@
 @media screen and (min-width:870px){
     .stable{
         & .logo{
-             margin: 20px 20px;
+             margin: 20px 0 20px 20px;
         }
         & .btn{
             margin: 20px 20px;
         }
         & .list{
             & li{
-                font-size: 20px;
+                font-size: 14px;
                 font-weight: 400;
+                text-transform: uppercase;
                 white-space: nowrap;
             }
         }
     }
 } 
+
+@media screen and (min-width:1125px) {
+    .stable{
+        & .logo{
+             margin: 20px 0 20px 50px;
+        }
+        & .btn{
+            margin: 20px 50px 20px 0;
+        }
+        & .list{
+            & li{
+                font-weight: 400;
+                text-transform: uppercase;
+                white-space: nowrap;
+            }
+        }
+    }
+}

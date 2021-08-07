@@ -1,16 +1,26 @@
 .button-sec {
   background-color: #EE7E77;
   color: white;
-  font-size: 24px;
+  font-size: 22px;
   border: none;
-  padding: 15px 35px;
-  border-radius: 20px;
+  padding: 15px 40px;
+  border-radius: 9px;
+  margin: 10px;
   font-weight: 600;
+  white-space: nowrap;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
 .button-sec:hover {
-  background-color: #aa4343;
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+@media screen and (min-width: 100px) {
+  .button-sec {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 /*# sourceMappingURL=button-sec.css.map */
