@@ -14,6 +14,13 @@ function Nav() {
             <header>
                 <div className="stable">
                     <h1 className="logo">HELLO.</h1>
+                    <ul className="list">
+                        <li>Home</li>
+                        <li>Services</li>
+                        <li>Why us</li>
+                        <li>Contact</li>
+                    </ul>
+                    <button className="btn">message</button>
                     <img alt="menu" onClick={ chang } src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png"/>
                 </div>
                 {menu && (<div className="mob-nav">
