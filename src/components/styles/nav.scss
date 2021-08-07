@@ -33,6 +33,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    transition: all .2 ease-in-out;
     & ul{
         list-style: none;
         padding: 0;

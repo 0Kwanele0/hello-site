@@ -51,6 +51,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: all .2 ease-in-out;
+  transition: all .2 ease-in-out;
 }
 
 .mob-nav ul {
