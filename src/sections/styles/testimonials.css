@@ -1,0 +1,129 @@
+.testimony {
+  overflow-x: hidden;
+}
+
+.testimony__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media screen and (min-width: 980px) {
+  .testimony__cont {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.testimony__cont::-webkit-scrollbar {
+  display: none;
+}
+
+.testimony__cont .arrow {
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: fixed;
+}
+
+.testimony h2 {
+  padding: 10px 0px;
+  text-align: center;
+  color: blue;
+  font-size: 44px;
+  font-weight: 800;
+  margin: 0;
+}
+
+@media screen and (min-width: 300px) {
+  .testimony h2 {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .testimony h2 {
+    font-size: 58px;
+    font-weight: 700;
+  }
+}
+
+.testimony p {
+  margin: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.testimony__box {
+  background-color: blue;
+  color: white;
+  padding: 40px 20px;
+  border: none;
+  border-radius: 50px;
+  margin: 40px 20px;
+  max-width: 300px;
+  min-width: 220px;
+}
+
+@media screen and (min-width: 300px) {
+  .testimony__box {
+    min-width: 250px;
+  }
+}
+
+.testimony__box .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 18px;
+}
+
+.testimony__box .top .img-cont {
+  margin-right: 30px;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  background-color: #615ae6;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.testimony__box .top h4 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #edd7d7;
+  letter-spacing: .1px;
+}
+
+@media screen and (min-width: 300px) {
+  .testimony__box .top h4 {
+    white-space: nowrap;
+  }
+}
+
+.testimony__box p {
+  font-size: 17.4px;
+  line-height: 1.24;
+  color: #ced8e7;
+}
+
+@media screen and (min-width: 800px) {
+  .testimony__box p {
+    line-height: 1.4;
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=testimonials.css.map */

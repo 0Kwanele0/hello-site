@@ -1,0 +1,95 @@
+.testimony{
+    overflow-x: hidden;
+    &__cont{
+        display: flex;
+        overflow-x: scroll;
+        position: relative;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+        @media screen and (min-width:980px) {
+            justify-content: center;
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        & .arrow{
+            width: 40px;
+            height: 40px;
+            transform: rotate(90deg);
+            position: fixed;
+            
+        }
+    }
+    
+    & h2{
+        padding:10px 0px;
+        text-align: center;
+        color: blue;
+        font-size: 44px;
+        font-weight:800;
+        margin: 0;
+        @media screen and (min-width:300px) {
+        padding:10px 20px;
+
+        }
+        @media screen and (min-width:990px) {
+            font-size: 58px;
+            font-weight: 700;
+        }
+    }
+    & p{
+        margin: 5px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    &__box{
+        background-color: blue;
+        color: white;
+        padding: 40px 20px;
+        border: none;
+        border-radius: 50px;
+        margin: 40px 20px;
+        max-width: 300px;
+        min-width: 220px;
+        @media screen and (min-width:300px) {
+            min-width: 250px;
+
+        }
+        & .top{
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+            & .img-cont{
+                margin-right: 30px;
+                width: 50px;
+                height: 50px;
+                min-width: 50px;
+                min-height: 50px;
+                background-color: rgb(97, 90, 230);
+                border-radius: 100%;
+                object-fit: cover;
+            }
+            & h4{
+                font-weight: 400;
+                font-size: 16px;
+                color: rgb(237, 215, 215);
+                letter-spacing: .1px;
+                @media screen and (min-width:300px) {
+                    white-space: nowrap;
+                }
+            }
+            
+        }
+        & p{
+                font-size: 17.4px;
+                line-height: 1.24;
+                color: rgb(206, 216, 231);
+                @media screen and (min-width:800px) {
+                    line-height: 1.4;
+                    font-size: 15px;
+                }
+            }
+    }
+}

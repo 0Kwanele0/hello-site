@@ -1,0 +1,110 @@
+.why {
+  padding: 100px 15px;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.why h2 {
+  padding: 0 11px;
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.why img {
+  min-width: 300px;
+  width: 300px;
+}
+
+.why ul {
+  padding: 5px;
+}
+
+.why li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 21px;
+  padding: 6px 0;
+  list-style: none;
+}
+
+.why li .span {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  min-width: 15px;
+  min-height: 15px;
+  background-color: #f03232;
+  margin-right: 20px;
+}
+
+.big-list {
+  display: none;
+}
+
+@media screen and (min-width: 530px) {
+  .why {
+    padding: 100px 70px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .why {
+    padding: 100px 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .why img {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 40%;
+    height: 40%;
+  }
+  .why .small-list {
+    display: none;
+  }
+  .why h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 750px) and (min-width: 890px) {
+  .why h2 {
+    font-size: 58px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .big-list {
+    display: block;
+    margin-left: 60px;
+  }
+  .big-list li {
+    font-size: 18px;
+  }
+  .head {
+    max-width: 50%;
+  }
+}
+/*# sourceMappingURL=why.css.map */
