@@ -1,0 +1,17 @@
+$color-main :#3733FB;
+$color-accent :#EE7E77;
+
+
+.button-main{
+    background-color: $color-main;
+    color: white;
+    font-size: 22px;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 9px;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+    &:hover{
+        background-color: rgb(148, 87, 209);
+    }
+}

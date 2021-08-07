@@ -1,0 +1,16 @@
+.button-main {
+  background-color: #3733FB;
+  color: white;
+  font-size: 22px;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 9px;
+  font-weight: 600;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.button-main:hover {
+  background-color: #9457d1;
+}
+/*# sourceMappingURL=button-main.css.map */

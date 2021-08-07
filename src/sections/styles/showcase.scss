@@ -1,0 +1,43 @@
+.showcase{
+    width: 100%;
+    flex-wrap: nowrap;
+    text-align: center;
+    overflow: hidden;
+    &__image{
+        width: 480px;
+        position: relative;
+        right: 40px;
+    }
+    &__title{
+        font-weight: 900;
+        font-size: 38px;
+        margin: 0;
+        padding: 10px;
+    }
+    &__description{
+        margin-top: 0;
+        font-size: 19px;
+        padding: 10px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (min-width:740px) {
+    .showcase{
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        &__image{
+            order: 2;
+        }
+        &__title{
+            font-size: 50px;
+            font-weight: 900;
+        }
+    }
+    .right{
+        order: 1;
+        text-align: left;
+        
+    }
+}

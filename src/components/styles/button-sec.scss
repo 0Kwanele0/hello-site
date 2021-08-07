@@ -1,0 +1,17 @@
+$color-main :#3733FB;
+$color-accent :#EE7E77;
+
+
+.button-sec{
+    background-color: $color-accent;
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+    &:hover{
+        background-color: rgb(170, 67, 67);
+    }
+}
