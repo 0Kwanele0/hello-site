@@ -1,0 +1,79 @@
+.why{
+    padding:100px 15px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    & h2{
+        padding: 0 11px;
+        font-size: 44px;
+        font-weight: 800;
+    }
+    img{
+        min-width: 300px;
+        width: 300px;
+    }
+    & ul{
+        padding: 5px;
+    }
+    & li{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 21px;
+        padding: 6px 0;
+        list-style: none;
+        & .span{
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            min-width: 15px;
+            min-height: 15px;
+            background-color: rgb(240, 50, 50);
+            margin-right: 20px;
+        }
+    }
+}
+.big-list{
+    display: none;
+}
+@media screen and (min-width: 530px) {
+    .why{
+        padding: 100px 70px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .why{
+        padding: 100px 15px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        & img{
+            order: 3;
+            width: 40%;
+            height: 40%;
+        }
+        & .small-list{
+            display: none;
+        }
+        & h2{
+            font-size: 40px;
+            @media screen and (min-width:890px){
+                font-size: 58px;
+                
+            }
+        }
+    }
+    .big-list{
+        display: block;
+        margin-left: 60px;
+        & li{
+            font-size: 18px;
+        }
+    }
+    .head{
+        max-width: 50%;
+    }
+
+    
+}
