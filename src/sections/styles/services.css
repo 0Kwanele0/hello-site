@@ -1,6 +1,13 @@
 .services {
   padding: 100px 20px;
   overflow-x: hidden;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.services::-webkit-scrollbar {
+  display: none;
 }
 
 .services h2 {

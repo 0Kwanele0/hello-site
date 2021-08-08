@@ -1,14 +1,53 @@
 import React from 'react'
 import './styles/services.css'
-import {list} from './service-list'
+import { list } from './service-list'
+import { useRef, useEffect } from 'react'
+import gsap from 'gsap/gsap-core'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
 
 
 function Services() {
+    let box = useRef()
+    let each = useRef()
+    let one = useRef()
+    useEffect(() => {
+        gsap.from(box, 2, {
+            scrollTrigger: {
+                trigger: box,
+                scrub: 1.5,
+                toggleActions: "play none reverse none"
+            },
+            y: 200,
+            ease: "circ"
+        })
+        gsap.from(each, 2, {
+            scrollTrigger: {
+                trigger: each,
+                scrub: 1.5,
+                toggleActions: "play none reverse none"
+            },
+            y: 30,
+            opacity:0,
+            ease: "circ"
+        })
+        gsap.from(one, 1, {
+            scrollTrigger: {
+                trigger: one,
+                scrub: 1.5,
+                toggleActions: "play none reverse none"
+            },
+            y: -70,
+            opacity:0,
+            ease: "circ"
+        })
+    })
+
     return (
-        <div className="services">
-            <h2>What we can do for you</h2>
-            <p>In whatever we do; we make sure we excell.</p>
-            <div className="services__box">
+        <div  ref={(el)=>{box=el}}  className="services">
+            <h2 ref={(el) => { one = el }}>What we can do for you</h2>
+            <p  ref={(el) => { each = el }}>In whatever we do; we make sure we excell.</p>
+            <div  className="services__box">
                 {list.map((item, key) => {
                     return (
                         <div className="services__each">

@@ -3,6 +3,7 @@ import ButtonMain from '../components/button-main'
 import theImg from '../images/newsletter.png'
 import './styles/contact.css'
 
+
 function Contact() {
     return (
         <div className="contact">
