@@ -2,14 +2,12 @@ import React from 'react'
 import './styles/nav.css'
 import { useState, useRef, useEffect } from 'react'
 import gsap from 'gsap/gsap-core'
-import { TweenLite } from 'gsap/gsap-core'
 
 function Nav() {
-
     let men = useRef()
 
     useEffect(() => {
-        TweenLite.from(men.current, 2, {
+        gsap.from(men.current, 2, {
             opacity: 0,
             y: -50,
             ease:"expo"
