@@ -66,13 +66,13 @@
   border: 1px solid blue;
   border-radius: 5px;
   outline: none;
-  min-width: 200px;
-  width: 100%;
+  min-width: 100px;
+  width: 96%;
   max-width: 400px;
 }
 
 .contact .form textarea {
-  width: 100%;
+  width: 95%;
   max-width: 400px;
   font-size: 16px;
   padding: 10px 5px;

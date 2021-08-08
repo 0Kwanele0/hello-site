@@ -1,0 +1,192 @@
+.footer {
+  background-color: #3733FB;
+  color: white;
+  padding: 50px 30px;
+}
+
+.footer .newsletter {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .newsletter p {
+  margin: 5px 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.footer .newsletter input {
+  font-size: 24px;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 9px 9px;
+  outline: none;
+  color: white;
+  font-weight: 100;
+  max-width: 360px;
+}
+
+.footer .newsletter button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+  padding: 10px 38px;
+  outline: none;
+  border: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer .newsletter button:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+.footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .links .company {
+  padding: 20px 10px;
+}
+
+.footer .links .company h2 {
+  margin: 5px 0;
+}
+
+.footer .links .company p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.footer .links .company h4 {
+  font-size: 18px;
+  margin: 4px 0;
+  font-weight: 400;
+}
+
+.footer .links .menu {
+  padding: 20px 10px;
+}
+
+.footer .links .menu h4 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.footer .links .menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .links .menu ul li {
+  font-size: 20px;
+  font-weight: 200;
+  padding: 4px 0;
+}
+
+.menu.out {
+  display: none;
+  padding: 20px 10px;
+}
+
+.menu.out h4 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.menu.out ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu.out ul li {
+  font-size: 20px;
+  font-weight: 200;
+  padding: 4px 0;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  cursor: pointer;
+}
+
+.menu.out ul li:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+@media screen and (min-width: 600px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 70px 10px;
+  }
+  .footer .menu.out {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    display: block;
+  }
+  .footer .newsletter {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer .links {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer .links .menu.in {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .footer {
+    padding: 70px 50px;
+  }
+  .footer .newsletter p {
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .footer .newsletter input {
+    font-size: 19px;
+  }
+  .footer .links .company h2 {
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  .footer .links .company h2:hover {
+    -webkit-transform: scale(110%);
+            transform: scale(110%);
+  }
+}
+/*# sourceMappingURL=footer.css.map */
