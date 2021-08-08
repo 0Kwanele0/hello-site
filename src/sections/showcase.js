@@ -18,7 +18,12 @@ function Showcase() {
             opacity:0,
             ease: "expo"
         })
-        gsap.from(head, 1.5, {
+        gsap.from(head, {
+            scrollTrigger: {
+                trigger: head,
+                toggleActions: "play play restart play"
+            },
+            duration:2,
             y: 30,
             opacity: 0,
             ease: "expo"
@@ -27,7 +32,12 @@ function Showcase() {
             opacity: 0,
             ease: "expo"
         })
-        gsap.from(text,1.2, {
+        gsap.from(text,{
+            scrollTrigger: {
+                trigger: text,
+                toggleActions: "play play restart play"
+            },
+            duration: 2,
             opacity: 0,
             scale: 1.1,
             ease: "expo"
