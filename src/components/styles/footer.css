@@ -101,6 +101,14 @@
   font-size: 20px;
   font-weight: 200;
   padding: 3px 0;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.footer .links .menu ul li:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
 }
 
 .menu.out {
