@@ -3,7 +3,7 @@ import './styles/testimonials.css'
 import ScrollContainer from 'react-indiana-drag-scroll'
 import {testies} from './testimony-list'
 import { useRef, useEffect } from 'react'
-import gsap from 'gsap/gsap-core'
+import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger)
 

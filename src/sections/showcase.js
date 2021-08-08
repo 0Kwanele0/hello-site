@@ -4,7 +4,7 @@ import ButtonMain from '../components/button-main'
 import './styles/showcase.css'
 import ButtonSec from '../components/button-sec'
 import { useRef, useEffect } from 'react'
-import gsap from 'gsap/gsap-core'
+import gsap from 'gsap'
 
 
 function Showcase() {

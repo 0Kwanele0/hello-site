@@ -3,7 +3,7 @@ import ButtonMain from '../components/button-main'
 import theImg from '../images/newsletter.png'
 import './styles/contact.css'
 import { useRef, useEffect } from 'react'
-import gsap from 'gsap/gsap-core'
+import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger)
 

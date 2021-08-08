@@ -2,7 +2,7 @@ import React from 'react'
 import './styles/services.css'
 import { list } from './service-list'
 import { useRef, useEffect } from 'react'
-import gsap from 'gsap/gsap-core'
+import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger)
 
