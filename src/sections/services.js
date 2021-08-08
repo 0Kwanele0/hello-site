@@ -12,31 +12,34 @@ function Services() {
     let each = useRef()
     let one = useRef()
     useEffect(() => {
-        gsap.from(box, 2, {
+        gsap.from(box, {
             scrollTrigger: {
                 trigger: box,
                 scrub: 1.5,
                 toggleActions: "play none reverse none"
             },
+            duration: 1,
             y: 200,
             ease: "circ"
         })
-        gsap.from(each, 2, {
+        gsap.from(each, {
             scrollTrigger: {
                 trigger: each,
                 scrub: 1.5,
                 toggleActions: "play none reverse none"
             },
+            duration:2,
             y: 30,
             opacity:0,
             ease: "circ"
         })
-        gsap.from(one, 1, {
+        gsap.from(one,  {
             scrollTrigger: {
                 trigger: one,
                 scrub: 1.5,
                 toggleActions: "play none reverse none"
             },
+            duration:2,
             y: -70,
             opacity:0,
             ease: "circ"
@@ -50,10 +53,10 @@ function Services() {
             <div  className="services__box">
                 {list.map((item, key) => {
                     return (
-                        <div className="services__each">
-                            <img src={item.img }></img>
-                            <h3>{ item.header}</h3>
-                            <p>{ item.description}</p>
+                        <div key={item.id} className="services__each">
+                            <img alt="service" src={item.img }></img>
+                            <h3 >{ item.header}</h3>
+                            <p >{ item.description}</p>
                         </div>
                     )
                 })}

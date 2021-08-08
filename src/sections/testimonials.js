@@ -29,10 +29,9 @@ function Testimony() {
             <ScrollContainer className="testimony__cont">
                 {testies.map((item, key) => {
                     return (
-                        <div className="testimony__box">
-                            <div class="top">
+                        <div key={item.id}className="testimony__box">
+                            <div className="top">
                                 <div className="img-cont">
-                                    <img ></img>
                                 </div>
                                 <h4>{ item.name}</h4>
                             </div>

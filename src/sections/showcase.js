@@ -4,8 +4,8 @@ import ButtonMain from '../components/button-main'
 import './styles/showcase.css'
 import ButtonSec from '../components/button-sec'
 import { useRef, useEffect } from 'react'
-import { TweenLite}from 'gsap'
 import gsap from 'gsap/gsap-core'
+
 
 function Showcase() {
     let imag = useRef()
@@ -15,11 +15,10 @@ function Showcase() {
 
     useEffect(() => {
         gsap.from(imag,2, {
-            y: 50,
             opacity:0,
             ease: "expo"
         })
-        gsap.from(head,1.5, {
+        gsap.from(head, 1.5, {
             y: 30,
             opacity: 0,
             ease: "expo"
@@ -41,7 +40,7 @@ function Showcase() {
             <div className="right">
                 <h1 ref={(le)=> {head = le}} className="showcase__title">Designing websites for the future</h1>
                 <p ref={(le)=> {text = le}}className="showcase__description">Give us a chance and we will make your dreams come true we are dedicated. committed and trusted</p>
-                <div ref={(e)=>{btn = e}} class="btns">
+                <div ref={(e)=>{btn = e}} className="btns">
                     <ButtonMain text="Contuct Us" />
                     <span className="btns__sec">
                         <ButtonSec />

@@ -2,14 +2,33 @@ import React from 'react'
 import ButtonMain from '../components/button-main'
 import theImg from '../images/newsletter.png'
 import './styles/contact.css'
+import { useRef, useEffect } from 'react'
+import gsap from 'gsap/gsap-core'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
 
 
 function Contact() {
+
+    let contain = useRef()
+
+    useEffect(() => {
+        gsap.from(contain, 1.4, {
+            scrollTrigger: {
+                trigger: contain,
+                toggleActions: "restart none reverse none"
+            },
+            scale: 0.8,
+            opacity: 0,
+            ease: "power4"
+        })
+    })
+
     return (
-        <div className="contact">
-            <div class="head">
+        <div ref={(hi)=>{contain = hi}} className="contact">
+            <div className="head">
                 <h2>Contact Us</h2>
-                <div class="form one">
+                <div className="form one">
                     <form>
                         <p>Name</p>
                         <input type="text" name="name"></input>
@@ -18,13 +37,13 @@ function Contact() {
                         <p>Message</p>
                         <textarea rows="4"  type="text" name="message"></textarea>
                     </form>
-                    <div class="btn">
+                    <div className="btn">
                         <ButtonMain text="Message" />
                     </div>
                 </div>
             </div>
-            <img src={ theImg}></img>
-            <div class="form two">
+            <img alt="newsletter" src={ theImg}></img>
+            <div className="form two">
                 <form>
                     <p>Name</p>
                     <input type="text" name="name"></input>
@@ -33,7 +52,7 @@ function Contact() {
                     <p>Message</p>
                     <textarea rows="4"  type="text" name="message"></textarea>
                 </form>
-                <div class="btn">
+                <div className="btn">
                     <ButtonMain text="Message" />
                 </div>
             </div>
