@@ -1,0 +1,133 @@
+.contact {
+  overflow-x: hidden;
+  padding: 50px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact h2 {
+  padding: 0 11px;
+  font-size: 44px;
+  font-weight: 800;
+  color: #3733FB;
+}
+
+.contact p {
+  margin: 15px 0 5px 0;
+  font-size: 19px;
+  min-width: 200px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact img {
+  min-width: 300px;
+  width: 300px;
+}
+
+.contact .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.contact .form form {
+  width: 100%;
+}
+
+.contact .form p {
+  margin: 15px 0 5px 0;
+  padding-right: 0;
+  font-size: 19px;
+  min-width: 200px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact .form input {
+  font-size: 16px;
+  padding: 10px 5px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  outline: none;
+  min-width: 200px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact .form textarea {
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+  padding: 10px 5px;
+  border: 1px solid blue;
+  font-family: sans-serif;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact .form .btn {
+  width: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.head .form {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  .contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .contact img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 50%;
+  }
+  .contact h2 {
+    font-size: 58px;
+  }
+  .contact .two {
+    display: none;
+  }
+  .head .form {
+    display: block;
+  }
+  .head {
+    display: block;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
