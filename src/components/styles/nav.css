@@ -22,12 +22,20 @@
   font-weight: 900;
   margin: 0;
   padding: 5px 0 5px 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 229px) {
   .stable .logo {
     font-size: 26px;
   }
+}
+
+.stable .logo:hover {
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
 }
 
 .stable .btn {
@@ -89,8 +97,12 @@
 
 .mob-nav ul li {
   padding: 30px 0;
-  font-weight: 500;
-  font-size: 30px;
+  font-weight: 200;
+  font-size: 25px;
+  letter-spacing: 1.1px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 @media screen and (max-width: 229px) {
@@ -99,22 +111,28 @@
   }
 }
 
+.mob-nav ul li:hover {
+  -webkit-transform: scale(115%);
+          transform: scale(115%);
+}
+
 .mob-nav button {
   padding: 15px 30px;
   font-size: 20px;
-  color: #504b4b;
-  font-weight: 600;
+  color: #272525;
+  font-weight: 300;
   background-color: white;
   border: none;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-bottom: 50px;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  cursor: pointer;
 }
 
 .mob-nav button:hover {
-  background-color: #dcd9d9;
-  color: #373737;
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
 }
 
 @media screen and (max-width: 229px) {

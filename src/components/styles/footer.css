@@ -71,14 +71,14 @@
 }
 
 .footer .links .company p {
-  margin: 0;
+  margin: 10px 0;
   font-size: 20px;
   font-weight: 200;
 }
 
 .footer .links .company h4 {
   font-size: 18px;
-  margin: 4px 0;
+  margin: 22px 0;
   font-weight: 400;
 }
 
@@ -100,7 +100,7 @@
 .footer .links .menu ul li {
   font-size: 20px;
   font-weight: 200;
-  padding: 4px 0;
+  padding: 3px 0;
 }
 
 .menu.out {
