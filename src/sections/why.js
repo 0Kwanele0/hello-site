@@ -8,12 +8,13 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 function Why() {
-    let head = useRef()
     let list = useRef()
-    let lili = useRef()
-    
-    useEffect(() => {
 
+    useEffect(() => {
+        const element = list.current
+        const list1 = element.querySelector(".big-list")
+        const head = element.querySelector(".myhead")
+        const lili = element.querySelector(".small-list")
         gsap.from(head, 1.8, {
             scrollTrigger: {
                 trigger: head,
@@ -22,9 +23,9 @@ function Why() {
             y: 100,
             ease: "power4"
         })
-        gsap.from(list, {
+        gsap.from(list1, {
             scrollTrigger: {
-                trigger: list,
+                trigger: list1,
                 toggleActions: "restart none none none"
             },
             duration:3,
@@ -33,7 +34,7 @@ function Why() {
         })
         gsap.from(lili, {
             scrollTrigger: {
-                trigger: list,
+                trigger: lili,
                 toggleActions: "restart none none none"
             },
             duration:3,
@@ -43,10 +44,10 @@ function Why() {
         
     })
     return (
-        <div className="why">
+        <div  ref={list}  className="why">
             <div className="head">
-                <h2 ref={(el)=>{head = el}}>Why you would love to work with us.</h2>
-                <ul ref={(vv)=>{lili = vv}} className="big-list">
+                <h2 className="myhead" >Why you would love to work with us.</h2>
+                <ul className="big-list">
                     <li><div className="span"></div>We focus on value</li>
                     <li><div className="span"></div>We make sure we do what you desire</li>
                     <li><div className="span"></div>Our designs a slick minimal and classy</li>
@@ -54,7 +55,7 @@ function Why() {
                 </ul>
             </div>
             <img alt="coins" src={coins}></img>
-            <ul ref={(vr)=>{list = vr}} className="small-list">
+            <ul className="small-list">
                 <li><div className="span"></div>We focus on value</li>
                 <li><div className="span"></div>We make sure we do what you desire</li>
                 <li><div className="span"></div>Our designs a slick minimal and classy</li>
