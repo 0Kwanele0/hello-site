@@ -29,7 +29,7 @@ function App() {
           size={30}
         />
           :
-        <div>
+        <div className="div">
           <Nav />
           <Showcase />
           <Services />
