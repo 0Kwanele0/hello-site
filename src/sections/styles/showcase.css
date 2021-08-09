@@ -22,19 +22,19 @@
   font-weight: 300;
   font-size: 30px;
   margin: 0;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 
 @media screen and (max-width: 540px) {
   .showcase__title {
-    font-size: 34px;
+    font-size: 35px;
   }
 }
 
 .showcase__description {
   margin-top: 0;
   font-size: 15px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-weight: 300;
 }
 
