@@ -5,17 +5,41 @@ import Services from "./sections/services";
 import Showcase from "./sections/showcase";
 import Testimony from "./sections/testimonials";
 import Why from "./sections/why";
+import './App.css'
+import { useEffect, useState } from 'react'
+import DotLoader from "react-spinners/DotLoader";
 
 function App() {
+  const [load, setLoader] = useState(false)
+
+  useEffect(() => {
+    setLoader(true)
+    setTimeout(() => {
+      setLoader(false)
+    }, 2000)
+  }, [])
+
   return (
     <div className="App">
-      <Nav />
-      <Showcase />
-      <Services />
-      <Testimony />
-      <Why />
-      <Contact />
-      <Footer />
+      {
+        load ?
+        <DotLoader
+          color={"#5F36D7"}
+          loading={load}
+          size={30}
+        />
+          :
+        <div>
+          <Nav />
+          <Showcase />
+          <Services />
+          <Testimony />
+          <Why />
+          <Contact />
+          <Footer />
+        </div>
+          
+      }
     </div>
   );
 }
