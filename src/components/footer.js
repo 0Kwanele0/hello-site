@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react'
+import React from 'react'
 import './styles/footer.css'
 import ScrollIntoView from 'react-scroll-into-view'
 
