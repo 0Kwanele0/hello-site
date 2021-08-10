@@ -8,7 +8,7 @@ import ScrollIntoView from 'react-scroll-into-view'
 function Footer() {
  
     const chingo = () => {
-        return null
+        return true
     }
     return (
         <div className="footer">
@@ -27,27 +27,6 @@ function Footer() {
                 <div className="menu in">
                     <h4>Links</h4>
                     <ul>
-                        <ScrollIntoView selector="#home">
-                            <li onClick={ chingo }>Home</li>
-                        </ScrollIntoView>
-                        <ScrollIntoView selector="#why">
-                            <li onClick={ chingo }>Why us</li>
-                        </ScrollIntoView>
-                        <ScrollIntoView selector="#serv">
-                            <li onClick={ chingo }>Services</li>
-                        </ScrollIntoView>
-                        <ScrollIntoView selector="#contact">
-                            <li onClick={ chingo }>Contact</li>
-                        </ScrollIntoView>
-                        <ScrollIntoView selector="#test">
-                            <li onClick={ chingo }>Testimonial</li>
-                        </ScrollIntoView>
-                    </ul>
-                </div>
-            </div>
-            <div className="menu out">
-                <h4>Links</h4>
-                <ul>
                     <ScrollIntoView selector="#home">
                         <li onClick={ chingo }>Home</li>
                     </ScrollIntoView>
@@ -63,6 +42,27 @@ function Footer() {
                     <ScrollIntoView selector="#test">
                         <li onClick={ chingo }>Testimonial</li>
                     </ScrollIntoView>
+                    </ul>
+                </div>
+            </div>
+            <div className="menu out">
+                <h4>Links</h4>
+                <ul>
+                <ScrollIntoView selector="#home">
+                    <li onClick={ chingo }>Home</li>
+                </ScrollIntoView>
+                <ScrollIntoView selector="#why">
+                    <li onClick={ chingo }>Why us</li>
+                </ScrollIntoView>
+                <ScrollIntoView selector="#serv">
+                    <li onClick={ chingo }>Services</li>
+                </ScrollIntoView>
+                <ScrollIntoView selector="#contact">
+                    <li onClick={ chingo }>Contact</li>
+                </ScrollIntoView>
+                <ScrollIntoView selector="#test">
+                    <li onClick={ chingo }>Testimonial</li>
+                </ScrollIntoView>
                 </ul>
             </div>
         </div>
