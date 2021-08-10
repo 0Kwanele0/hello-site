@@ -12,7 +12,7 @@ function Testimony() {
 
     let cont = useRef()
     useEffect(() => {
-        gsap.from(cont, 2, {
+        gsap.from(cont, 3, {
             scrollTrigger: {
                 trigger: cont,
                 toggleActions: "restart none none none"

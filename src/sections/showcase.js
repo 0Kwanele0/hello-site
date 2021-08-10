@@ -24,7 +24,7 @@ function Showcase() {
                 toggleActions: "play play restart play"
             },
             duration:2,
-            y: 30,
+            y: 170,
             opacity: 0,
             ease: "expo"
         })
@@ -39,13 +39,13 @@ function Showcase() {
             },
             duration: 2,
             opacity: 0,
-            scale: 1.1,
+            scale: 2,
             ease: "expo"
         })
     }, [])
 
     return (
-        <div className="showcase">
+        <div className="showcase" id="home">
             <img ref={ (el)=> {imag = el}} alt="dislpay" className="showcase__image image-fluid" src={show}></img>
             <div className="right">
                 <h1 ref={(le)=> {head = le}} className="showcase__title">Designing websites for the future</h1>

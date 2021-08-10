@@ -16,6 +16,7 @@ function Contact() {
         gsap.from(contain, 1.4, {
             scrollTrigger: {
                 trigger: contain,
+                start:"top center",
                 toggleActions: "restart none reverse none"
             },
             scale: 0.8,

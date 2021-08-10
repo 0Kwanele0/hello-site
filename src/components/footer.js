@@ -1,5 +1,7 @@
 import React from 'react'
 import './styles/footer.css'
+import ScrollIntoView from 'react-scroll-into-view'
+
 
 function Footer() {
     return (
@@ -19,20 +21,42 @@ function Footer() {
                 <div className="menu in">
                     <h4>Links</h4>
                     <ul>
-                        <li>Home</li>
-                        <li>Contact</li>
-                        <li>Services</li>
-                        <li>Testimonials</li>
+                        <ScrollIntoView selector="#home">
+                            <li>Home</li>
+                        </ScrollIntoView>
+                        <ScrollIntoView selector="#why">
+                            <li>Why us</li>
+                        </ScrollIntoView>
+                        <ScrollIntoView selector="#serv">
+                            <li>Services</li>
+                        </ScrollIntoView>
+                        <ScrollIntoView selector="#contact">
+                            <li>Contact</li>
+                        </ScrollIntoView>
+                        <ScrollIntoView selector="#test">
+                            <li>Testimonial</li>
+                        </ScrollIntoView>
                     </ul>
                 </div>
             </div>
             <div className="menu out">
                 <h4>Links</h4>
                 <ul>
-                    <li>Home</li>
-                    <li>Contact</li>
-                    <li>Services</li>
-                    <li>Testimonials</li>
+                    <ScrollIntoView selector="#home">
+                        <li>Home</li>
+                    </ScrollIntoView>
+                    <ScrollIntoView selector="#why">
+                        <li>Why us</li>
+                    </ScrollIntoView>
+                    <ScrollIntoView selector="#serv">
+                        <li>Services</li>
+                    </ScrollIntoView>
+                    <ScrollIntoView selector="#contact">
+                        <li>Contact</li>
+                    </ScrollIntoView>
+                    <ScrollIntoView selector="#test">
+                        <li>Testimonial</li>
+                    </ScrollIntoView>
                 </ul>
             </div>
         </div>
