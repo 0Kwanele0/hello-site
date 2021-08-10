@@ -31,30 +31,30 @@ function Contact() {
                 <div className="form one">
                     <form>
                         <p>Name</p>
-                        <input type="text" name="name"></input>
+                        <input required="true" minLength="5" type="text" name="name"></input>
                         <p>Email</p>
-                        <input type="email" name="email"></input>
+                        <input required="true" type="email" name="email"></input>
                         <p>Message</p>
-                        <textarea rows="4"  type="text" name="message"></textarea>
+                        <textarea rows="4" required="true" type="text" name="message"></textarea>
+                        <div className="btn" type="submit" onClick={(e)=> e.preventDefault}>
+                            <ButtonMain text="Message" />
+                        </div>
                     </form>
-                    <div className="btn">
-                        <ButtonMain text="Message" />
-                    </div>
                 </div>
             </div>
             <img alt="newsletter" src={ theImg}></img>
             <div className="form two">
                 <form>
                     <p>Name</p>
-                    <input type="text" name="name"></input>
+                    <input required="true" minLength="5" type="text" name="name"></input>
                     <p>Email</p>
-                    <input type="email" name="email"></input>
+                    <input required="true" type="email" name="email"></input>
                     <p>Message</p>
-                    <textarea rows="4"  type="text" name="message"></textarea>
+                    <textarea required="true" minLength="10" rows="4"  type="text" name="message"></textarea>
+                    <div className="btn" type="submit" onClick={(e)=> e.preventDefault}>
+                        <ButtonMain text="Message" />
+                    </div>
                 </form>
-                <div className="btn">
-                    <ButtonMain text="Message" />
-                </div>
             </div>
         </div>
     )

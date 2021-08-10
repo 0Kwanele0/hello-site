@@ -3,7 +3,7 @@ import './styles/button-main.css'
 
 function ButtonMain(props) {
     return (
-        <button className="button-main">{ props.text }</button>
+        <button onClick={(e)=> e.preventDefault()} type="submit" className="button-main">{ props.text }</button>
     )
 }
 

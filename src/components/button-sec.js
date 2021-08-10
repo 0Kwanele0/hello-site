@@ -3,7 +3,7 @@ import './styles/button-sec.css'
 
 function ButtonSec() {
     return (
-        <button className="button-sec">Contact us</button> 
+        <button onClick={(e)=> e.preventDefault} type="submit" className="button-sec">Contact us</button> 
     )
 }
 
