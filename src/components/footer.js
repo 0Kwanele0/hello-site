@@ -7,6 +7,9 @@ import ScrollIntoView from 'react-scroll-into-view'
 
 function Footer() {
  
+    const chingo = () => {
+        return null
+    }
     return (
         <div className="footer">
             <div className="newsletter">
@@ -25,19 +28,19 @@ function Footer() {
                     <h4>Links</h4>
                     <ul>
                         <ScrollIntoView selector="#home">
-                            <li>Home</li>
+                            <li onClick={ chingo }>Home</li>
                         </ScrollIntoView>
                         <ScrollIntoView selector="#why">
-                            <li>Why us</li>
+                            <li onClick={ chingo }>Why us</li>
                         </ScrollIntoView>
                         <ScrollIntoView selector="#serv">
-                            <li>Services</li>
+                            <li onClick={ chingo }>Services</li>
                         </ScrollIntoView>
                         <ScrollIntoView selector="#contact">
-                            <li>Contact</li>
+                            <li onClick={ chingo }>Contact</li>
                         </ScrollIntoView>
                         <ScrollIntoView selector="#test">
-                            <li>Testimonial</li>
+                            <li onClick={ chingo }>Testimonial</li>
                         </ScrollIntoView>
                     </ul>
                 </div>
@@ -46,19 +49,19 @@ function Footer() {
                 <h4>Links</h4>
                 <ul>
                     <ScrollIntoView selector="#home">
-                        <li>Home</li>
+                        <li onClick={ chingo }>Home</li>
                     </ScrollIntoView>
                     <ScrollIntoView selector="#why">
-                        <li>Why us</li>
+                        <li onClick={ chingo }>Why us</li>
                     </ScrollIntoView>
                     <ScrollIntoView selector="#serv">
-                        <li>Services</li>
+                        <li onClick={ chingo }>Services</li>
                     </ScrollIntoView>
                     <ScrollIntoView selector="#contact">
-                        <li>Contact</li>
+                        <li onClick={ chingo }>Contact</li>
                     </ScrollIntoView>
                     <ScrollIntoView selector="#test">
-                        <li>Testimonial</li>
+                        <li onClick={ chingo }>Testimonial</li>
                     </ScrollIntoView>
                 </ul>
             </div>
