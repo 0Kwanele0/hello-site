@@ -35,6 +35,9 @@ function Nav() {
                         <ScrollIntoView selector="#contact">
                             <li>Contact</li>
                         </ScrollIntoView>
+                        <ScrollIntoView selector="#test">
+                            <li>Testimonials</li>
+                        </ScrollIntoView>
                     </ul>
                     <ScrollIntoView selector="#contact">
                         <button className="btn">message</button>

@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
 import './styles/footer.css'
 import ScrollIntoView from 'react-scroll-into-view'
 
 
+
+
 function Footer() {
+ 
     return (
         <div className="footer">
             <div className="newsletter">

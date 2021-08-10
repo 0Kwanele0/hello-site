@@ -59,3 +59,12 @@
         display: none;
     }
 }
+
+.btns{
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width:1040px) {
+        padding: 0 15px;
+        justify-content: flex-start;
+    }
+}

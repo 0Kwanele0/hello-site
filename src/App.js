@@ -30,15 +30,14 @@ function App() {
         />
           :
         <div className="div">
-          <Nav />
-          <Showcase />
-          <Services />
-          <Testimony/>
-          <Why />
-          <Contact />
-          <Footer />
+            <Nav />
+            <Showcase />
+            <Services />
+            <Testimony/>
+            <Why />
+            <Contact />
+            <Footer />  
         </div>
-          
       }
     </div>
   );

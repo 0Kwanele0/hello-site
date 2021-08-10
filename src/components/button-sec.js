@@ -1,9 +1,9 @@
 import React from 'react'
 import './styles/button-sec.css'
 
-function ButtonSec() {
+function ButtonSec(props) {
     return (
-        <button onClick={(e)=> e.preventDefault} type="submit" className="button-sec">Contact us</button> 
+        <button onClick={(e) => e.preventDefault} type="submit" className="button-sec">{ props.text}</button>
     )
 }
 
