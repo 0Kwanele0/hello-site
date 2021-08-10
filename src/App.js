@@ -33,7 +33,7 @@ function App() {
           <Nav />
           <Showcase />
           <Services />
-          <Testimony />
+          <Testimony/>
           <Why />
           <Contact />
           <Footer />
