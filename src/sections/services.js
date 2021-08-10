@@ -47,7 +47,7 @@ function Services() {
     })
 
     return (
-        <div  ref={(el)=>{box=el}}  className="services">
+        <div  ref={(el)=>{box=el}}  className="services" id="serv">
             <h2 ref={(el) => { one = el }}>What we can do for you</h2>
             <p  ref={(el) => { each = el }}>In whatever we do; we make sure we excell.</p>
             <div  className="services__box">

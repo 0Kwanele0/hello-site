@@ -25,7 +25,7 @@ function Contact() {
     })
 
     return (
-        <div ref={(hi)=>{contain = hi}} className="contact">
+        <div ref={(hi)=>{contain = hi}} id="contact" className="contact">
             <div className="head">
                 <h2>Contact Us</h2>
                 <div className="form one">

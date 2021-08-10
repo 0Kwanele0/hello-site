@@ -44,7 +44,7 @@ function Why() {
         
     })
     return (
-        <div  ref={list}  className="why">
+        <div  ref={list}  className="why" id="why">
             <div className="head">
                 <h2 className="myhead" >Why you would love to work with us.</h2>
                 <ul className="big-list">

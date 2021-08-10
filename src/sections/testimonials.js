@@ -23,7 +23,7 @@ function Testimony() {
     })
 
     return (
-        <div ref={(el)=>{cont = el}} className="testimony">
+        <div ref={(el)=>{cont = el}} className="testimony" id="test">
             <h2>Hear our client’s voice</h2>
             <p>We make sure we get our clients satisfied with our services.</p>
             <ScrollContainer className="testimony__cont">
